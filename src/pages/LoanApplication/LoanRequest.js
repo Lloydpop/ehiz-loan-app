@@ -30,7 +30,7 @@ const LoanRequestForm = () => {
       const responseData = await response.json();
       console.log('Loan Request Response:', responseData);
       notification(responseData.message);
-      navigate('/loan-applications');
+      navigate('/all-loans');
     } catch (error) {
       console.error('Error requesting loan:', error);
       notification(error.responseData.message);
